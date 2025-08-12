@@ -35,12 +35,12 @@ local bodyColor = flashColor
 
 -- ====== SOUNDS ======
 local rumble = Instance.new("Sound", hrp)
-rumble.SoundId = "rbxassetid://1837635124"
+rumble.SoundId = "rbxassetid://9112795583"
 rumble.Looped = true
-rumble.Volume = 1
+rumble.Volume = 10
 
 local zap = Instance.new("Sound", hrp)
-zap.SoundId = "rbxassetid://138218317"
+zap.SoundId = "rbxassetid://9116277062"
 zap.Volume = 1
 
 -- ====== TRAILS ======
@@ -63,6 +63,7 @@ local function lightningTrail()
     })
     trail.Transparency = NumberSequence.new(0.2)
     trail.LightEmission = 1
+	trail.Texture = "rbxassetid://5699911443"
 
     Debris:AddItem(trail, 1)
     Debris:AddItem(a0, 1)
@@ -95,6 +96,7 @@ local function createElectricTrails()
             table.insert(electricTrails, trail)
             table.insert(electricTrails, att0)
             table.insert(electricTrails, att1)
+	        trail.Texture = "rbxassetid://7151778311"
         end
     end
 end
@@ -173,7 +175,7 @@ btnToggle.Text = "⚡ Toggle"
 btnToggle.TextSize = 18
 btnToggle.Font = Enum.Font.GothamBold
 btnToggle.TextColor3 = Color3.new(1, 1, 1)
-btnToggle.Draggable = true
+btnToggle.Draggable = false
 btnToggle.Active = true
 uiCorner:Clone().Parent = btnToggle
 uiStroke:Clone().Parent = btnToggle
@@ -188,7 +190,7 @@ btnColor.Text = "🎨 Color"
 btnColor.TextSize = 18
 btnColor.Font = Enum.Font.GothamBold
 btnColor.TextColor3 = Color3.new(1, 1, 1)
-btnColor.Draggable = true
+btnColor.Draggable = false
 btnColor.Active = true
 uiCorner:Clone().Parent = btnColor
 uiStroke:Clone().Parent = btnColor
@@ -201,10 +203,3 @@ btnColor.MouseButton1Click:Connect(function()
     bodyColor = flashColor
     btnToggle.BackgroundColor3 = flashColor
 end)
-
--- แจ้งเตือน
-game.StarterGui:SetCore("SendNotification", {
-	Titel" speed ";
-	Text = "suck";
-	Duration = 9;
-})
