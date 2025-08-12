@@ -15,18 +15,19 @@ local hrp = char:WaitForChild("HumanoidRootPart")
 -- ====== CONFIG ======
 local normalSpeed = 16
 local currentSpeed = 70
-local maxSpeed = 300
+local maxSpeed = 3000
 local accelerationRate = 5
 local isFlash = false
 
 -- ====== COLORS ======
 local colorList = {
-    Color3.fromRGB(0, 162, 255),   -- ฟ้า
-    Color3.fromRGB(255, 0, 0),     -- แดง
-    Color3.fromRGB(0, 255, 0),     -- เขียว
-    Color3.fromRGB(192, 192, 192), -- เงิน
-    Color3.fromRGB(139, 69, 19),   -- น้ำตาล
-    Color3.fromRGB(255, 105, 180), -- ชมพู่
+    Color3.fromRGB(0, 162, 255),   -- Blue
+    Color3.fromRGB(255, 0, 0),     -- Red
+    Color3.fromRGB(0, 255, 0),     -- Green
+    Color3.fromRGB(192, 192, 192), -- Gray
+    Color3.fromRGB(139, 69, 19),   -- Brown
+    Color3.fromRGB(255, 105, 180), -- Pink
+    Color3.fromRGB(255, 255, 0), -- Yellow
 }
 local currentColorIndex = 1
 local flashColor = colorList[currentColorIndex]
