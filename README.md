@@ -28,6 +28,7 @@ local colorList = {
     Color3.fromRGB(139, 69, 19),   -- Brown
     Color3.fromRGB(255, 105, 180), -- Pink
     Color3.fromRGB(255, 255, 0), -- Yellow
+	Color3.fromRGB(255, 255, 255) -- White
 }
 local currentColorIndex = 1
 local flashColor = colorList[currentColorIndex]
